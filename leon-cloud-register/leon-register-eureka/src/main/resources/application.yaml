@@ -5,10 +5,10 @@ spring:
   application:
     # 服务名字
     name: leon-register-euraka
-  security:
-    user:
-      name: leoncloud
-      password: 123456
+#  security:
+#    user:
+#      name: leoncloud
+#      password: 123456
 # com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused: connect
 # 主要时因为服务器在启动时，会把自己当做一个客户端去注册Eureka服务器，并且会到Eureka服务器中抓取注册信息，它自己本身只是一个服务器而不是服务器的提供者
 # 所以做如下修改
@@ -16,9 +16,10 @@ eureka:
   client:
     # register-with-eureka 属性声明是否将自己的注册信息注册到Eureka服务器，默认值true
     # 集群条件下需要设置为 true
-#    register-with-eureka: false
+    register-with-eureka: false
     # 属性fetch-registry 表示是否到 Eureka 服务器中抓取注册信息，将这两个属性设置为false，启动就不会出现异常
     fetch-registry: false
     # 添加注册信息，多个用逗号拼接
-    service-url:
-      defaultZone: http://leoncloud:123456@localhost:8762/eureka
+#    service-url:
+#      defaultZone: http://leoncloud:123456@localhost:8761/eureka # 密码登录
+#      defaultZone: http://localhost:8762/eureka
