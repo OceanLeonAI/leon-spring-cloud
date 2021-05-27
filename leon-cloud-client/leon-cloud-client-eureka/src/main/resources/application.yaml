@@ -5,5 +5,6 @@ spring:
     name: leon-register-eureka-client
 eureka:
   client:
-    # 集群用逗号隔开
-    defaultZone: http://localhost:8761/eureka,http://localhost:8762/eureka
+    service-url:
+      # 集群用逗号隔开
+      defaultZone: http://leoncloud:123456@localhost:8761/eureka,http://leoncloud:123456@localhost:8762/eureka
