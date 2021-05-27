@@ -12,6 +12,7 @@
 
     <modules>
         <module>leon-cloud-register</module>
+        <module>leon-cloud-client</module>
     </modules>
 
     <parent>
