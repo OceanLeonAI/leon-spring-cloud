@@ -8,3 +8,5 @@ eureka:
     service-url:
 #      defaultZone: http://leoncloud:123456@localhost:8761/eureka # 密码登录
       defaultZone: http://localhost:8761/eureka
+      # 本地服务状态向注册中心同步时间
+    instance-info-replication-interval-seconds: 10
