@@ -16,6 +16,7 @@
         <module>leon-cloud-actuator</module>
         <module>leon-cloud-ribbon</module>
         <module>leon-cloud-feign</module>
+        <module>leon-cloud-upload</module>
     </modules>
 
     <parent>
