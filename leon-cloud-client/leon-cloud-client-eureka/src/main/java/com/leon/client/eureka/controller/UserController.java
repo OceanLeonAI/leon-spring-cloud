@@ -3,6 +3,7 @@ package com.leon.client.eureka.controller;
 import com.leon.client.eureka.entity.User;
 import com.leon.client.eureka.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,9 @@ import java.util.List;
  **/
 @RestController
 public class UserController {
+    @Value("${server.port}")
+    private String serverPort;
+
     @Autowired
     private UserService userService;
 
@@ -45,7 +49,10 @@ public class UserController {
 
 
     @GetMapping("/hello")
-    public String hello() {
-        return "hello";
+    public String hello() throws InterruptedException {
+//        int millis = new Random().nextInt(3000);
+//        System.out.println("client线程休眠时间：" + millis);
+//        Thread.sleep(millis);
+        return "hello from com.leon.client.eureka.controller.UserController.hello()... " + serverPort;
     }
 }
