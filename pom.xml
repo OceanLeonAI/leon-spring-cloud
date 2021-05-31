@@ -15,6 +15,7 @@
         <module>leon-cloud-client</module>
         <module>leon-cloud-actuator</module>
         <module>leon-cloud-ribbon</module>
+        <module>leon-cloud-feign</module>
     </modules>
 
     <parent>

@@ -3,7 +3,8 @@ server:
 spring:
   application:
 #    name: leon-cloud-ribbon-client
-    name: leon-feign
+#    name: leon-feign
+    name: leon-cloud-ribbon-client
 eureka:
   client:
     service-url:
