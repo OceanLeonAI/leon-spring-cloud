@@ -1,8 +1,9 @@
 server:
-  port: 8774
+  port: 8772
 spring:
   application:
-    name: leon-cloud-ribbon-server
+#    name: leon-cloud-ribbon-client
+    name: leon-feign
 eureka:
   client:
     service-url:

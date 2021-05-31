@@ -6,8 +6,9 @@ import lombok.Data;
  * @PROJECT_NAME: leon-spring-cloud
  * @CLASS_NAME: HealthStatus
  * @AUTHOR: OceanLeonAI
- * @CREATED_DATE: 2021-05-30 21:53
- * @DESCRIPTION: 健康状态信息
+ * @CREATED_DATE: 2021/5/27 18:48
+ * @Version 1.0
+ * @DESCRIPTION:
  **/
 @Data
 public class HealthStatus {

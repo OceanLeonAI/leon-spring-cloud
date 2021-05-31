@@ -11,12 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
  * @PROJECT_NAME: leon-spring-cloud
  * @CLASS_NAME: MyHealthController
  * @AUTHOR: OceanLeonAI
- * @CREATED_DATE: 2021-05-30 21:58
- * @DESCRIPTION:
+ * @CREATED_DATE: 2021/5/27 18:50
+ * @Version 1.0
+ * @DESCRIPTION: 模拟是否可与第三方访问
  **/
 @RestController
 @Slf4j
 public class MyHealthController {
+
     @PostMapping("/healthStatus")
     public ResponseEntity<String> healthStatus(boolean isHealth) {
         HealthStatus.isVisited = isHealth;
