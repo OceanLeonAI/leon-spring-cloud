@@ -15,6 +15,7 @@
     <modules>
         <module>leon-cloud-hystrix-without-springcloud</module>
         <module>leon-cloud-hystrix-ribbon</module>
+        <module>leon-cloud-hystrix-feign</module>
     </modules>
 
     <properties>
