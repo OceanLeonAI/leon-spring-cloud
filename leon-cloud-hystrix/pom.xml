@@ -12,6 +12,9 @@
     <artifactId>leon-cloud-hystrix</artifactId>
     <packaging>pom</packaging>
     <description>hystrix 熔断相关</description>
+    <modules>
+        <module>leon-cloud-hystrix-without-springcloud</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
