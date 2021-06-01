@@ -11,4 +11,5 @@ zuul:
   routes:
     leon-cloud-ribbon-server:
       path: /ribbon/**
+#      url: forward:/local # 本地跳转，打开以后路径匹配情况下会跳转到本地
 #  prefix: /api  前缀，根据需要添加
