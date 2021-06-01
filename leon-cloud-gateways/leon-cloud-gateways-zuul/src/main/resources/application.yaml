@@ -1,0 +1,14 @@
+server:
+  port: 8679
+spring:
+  application:
+    name: leon-gateways-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+zuul:
+  routes:
+    leon-cloud-ribbon-server:
+      path: /ribbon/**
+#  prefix: /api  前缀，根据需要添加
