@@ -17,6 +17,7 @@
         <module>leon-cloud-ribbon</module>
         <module>leon-cloud-feign</module>
         <module>leon-cloud-upload</module>
+        <module>leon-cloud-hystrix</module>
     </modules>
 
     <parent>
