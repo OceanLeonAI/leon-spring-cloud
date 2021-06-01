@@ -10,3 +10,9 @@ eureka:
 feign:
   hystrix:
     enabled: true #开启hystrix
+# 打开所有端口以便于 dashboard 监控用
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

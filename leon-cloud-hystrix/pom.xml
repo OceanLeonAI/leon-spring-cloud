@@ -16,6 +16,8 @@
         <module>leon-cloud-hystrix-without-springcloud</module>
         <module>leon-cloud-hystrix-ribbon</module>
         <module>leon-cloud-hystrix-feign</module>
+        <module>leon-cloud-hystrix-dashboard</module>
+        <module>leon-cloud-hystrix-turbine</module>
     </modules>
 
     <properties>

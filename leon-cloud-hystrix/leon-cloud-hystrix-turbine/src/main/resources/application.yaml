@@ -1,0 +1,15 @@
+server:
+  port: 8678
+spring:
+  application:
+    name: leon-hystrix-feign-dashboard
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+turbine:
+  app-config: leon-hystrix-ribbon, leon-hystrix-feign  # 配置Eureka中的serviceId列表，表明监控哪些服务
+  aggregator:
+    cluster-config: default # 指定聚合哪些集群，多个使用","分割，默认为default。
+  cluster-name-expression: new String("default")
+  instanceUrlSuffix: actuator/hystrix.stream # turbine在收集时访问的后缀
