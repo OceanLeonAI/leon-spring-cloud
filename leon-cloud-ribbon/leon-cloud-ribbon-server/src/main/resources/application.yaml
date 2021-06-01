@@ -1,5 +1,5 @@
 server:
-  port: 8773
+  port: 8774
 spring:
   application:
     name: leon-cloud-ribbon-server

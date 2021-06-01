@@ -36,6 +36,7 @@ public class EurekaFeignController {
 
     @PostMapping(value = "/upload")
     public String upload(MultipartFile file) {
+        System.err.println("通过feign上传文件,开始上传文件...");
         return fileUploadFeignService.uploadFile(file);
     }
 }
