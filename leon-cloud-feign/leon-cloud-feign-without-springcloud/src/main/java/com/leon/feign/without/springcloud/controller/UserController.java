@@ -27,6 +27,8 @@ public class UserController {
      */
     @GetMapping("/hello")
     public String hello() {
+        // com.leon.client.eureka.LeonClientEurekaApplication
+        // com.leon.client.eureka.controller.UserController
         HelloClient hello = Feign.builder().target(HelloClient.class, "http://localhost:8763/"); // 实际生成代理调用 8763 的服务
         return hello.hello();
     }
