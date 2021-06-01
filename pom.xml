@@ -18,6 +18,7 @@
         <module>leon-cloud-feign</module>
         <module>leon-cloud-upload</module>
         <module>leon-cloud-hystrix</module>
+        <module>leon-cloud-gateways</module>
     </modules>
 
     <parent>

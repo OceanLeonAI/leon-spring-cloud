@@ -1,0 +1,10 @@
+server:
+  port: 8678
+spring:
+  application:
+    name: leon-gateways-zuul-simple
+zuul:
+  routes:
+    simple:
+      url: http://localhost:8763 #转发的地址
+#  prefix: /api # 前缀匹配
