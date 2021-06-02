@@ -115,3 +115,15 @@ spring:
           predicates:
             - Weight=group1, 2
   profiles: weight_route
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: map_request_header_route
+          uri: lb://leon-cloud-ribbon-server
+          predicates:
+            - After=2020-01-08T18:30:11.965+08:00[Asia/Shanghai]
+          filters:
+            - MapRequestHeader=Blue, X-Request-Red
+  profiles: map_request_header_route
