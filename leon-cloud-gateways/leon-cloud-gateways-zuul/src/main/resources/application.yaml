@@ -11,5 +11,22 @@ zuul:
   routes:
     leon-cloud-ribbon-server:
       path: /ribbon/**
-#      url: forward:/local # 本地跳转，打开以后路径匹配情况下会跳转到本地
-#  prefix: /api  前缀，根据需要添加
+  retryable: true # 是否开启重试
+#        url: forward:/local # 本地跳转，打开以后路径匹配情况下会跳转到本地
+#    prefix: /api  前缀，根据需要添加
+# 禁用过滤器：1.在配置文件中注释 2.在 Java Config 类文件中注释掉
+#  TokenFilter:
+#    route:
+#      disabled: true
+# 重试
+ribbon:
+  #配置首台服务器重试1次
+  MaxAutoRetries: 1
+  #配置其他服务器重试两次
+  MaxAutoRetriesNextServer: 2
+  #链接超时时间
+  ConnectTimeout: 500
+  #请求处理时间
+  ReadTimeout: 500
+  #每个操作都开启重试机制
+  OkToRetryOnAllOperations: true

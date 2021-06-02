@@ -19,6 +19,7 @@
         <module>leon-cloud-upload</module>
         <module>leon-cloud-hystrix</module>
         <module>leon-cloud-gateways</module>
+        <module>leon-cloud-common</module>
     </modules>
 
     <parent>

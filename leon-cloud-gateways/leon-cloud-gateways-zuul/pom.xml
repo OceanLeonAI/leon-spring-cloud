@@ -29,11 +29,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.leon.cloud</groupId>-->
-<!--            <artifactId>leon-cloud-common</artifactId>-->
-<!--            <version>1.0-SNAPSHOT</version>-->
-<!--        </dependency>-->
+        <!-- 公共模块 -->
+        <dependency>
+            <groupId>com.leon</groupId>
+            <artifactId>leon-cloud-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--重试包-->
         <dependency>
             <groupId>org.springframework.retry</groupId>
