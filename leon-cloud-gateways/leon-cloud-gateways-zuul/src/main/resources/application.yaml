@@ -30,3 +30,11 @@ ribbon:
   ReadTimeout: 500
   #每个操作都开启重试机制
   OkToRetryOnAllOperations: true
+#回退超时时间
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000

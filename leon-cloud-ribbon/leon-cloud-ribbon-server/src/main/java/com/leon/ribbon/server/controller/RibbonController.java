@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 /**
  * @PROJECT_NAME: leon-spring-cloud
@@ -32,9 +31,9 @@ public class RibbonController {
     public User getUserById(@PathVariable Long id, HttpServletRequest req) throws InterruptedException {
 
         // ================= 超过500秒就会重试 begin =================
-        int millis = new Random().nextInt(3000);
-        System.out.println("client线程休眠时间：" + millis);
-        Thread.sleep(millis);
+//        int millis = new Random().nextInt(3000);
+//        System.out.println("client线程休眠时间：" + millis);
+//        Thread.sleep(millis);
         // ================= 超过500秒就会重试   end =================
 
         String url = req.getRequestURL().toString();
