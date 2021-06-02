@@ -20,6 +20,7 @@
         <module>leon-cloud-hystrix</module>
         <module>leon-cloud-gateways</module>
         <module>leon-cloud-common</module>
+        <module>leon-cloud-mq</module>
     </modules>
 
     <parent>
@@ -153,10 +154,11 @@
     </dependencyManagement>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
+        <!-- gateway 应用 webflux 会和 web 冲突 -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

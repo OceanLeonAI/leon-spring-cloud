@@ -9,13 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>leon-cloud-gateways</artifactId>
+    <artifactId>leon-cloud-mq</artifactId>
     <packaging>pom</packaging>
-    <description>网关 gateway 相关</description>
     <modules>
-        <module>leon-cloud-gateways-zuul-simple</module>
-        <module>leon-cloud-gateways-zuul</module>
-        <module>leon-cloud-gateways-gateway-simple</module>
+        <module>leon-cloud-mq-kafka</module>
     </modules>
 
     <properties>
