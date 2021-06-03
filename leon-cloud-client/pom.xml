@@ -13,6 +13,7 @@
     <description>SpringCloud 客户端总工程</description>
     <modules>
         <module>leon-cloud-client-eureka</module>
+        <module>leon-cloud-client-nacos</module>
     </modules>
 
     <properties>

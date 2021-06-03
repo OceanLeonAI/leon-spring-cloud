@@ -16,6 +16,7 @@
         <module>leon-cloud-feign-client</module>
         <module>leon-cloud-feign-okhttp</module>
         <module>leon-cloud-feign-without-springcloud</module>
+        <module>leon-cloud-feign-api</module>
     </modules>
 
     <properties>

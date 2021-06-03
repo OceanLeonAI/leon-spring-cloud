@@ -3,25 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>leon-spring-cloud</artifactId>
+        <artifactId>leon-cloud-feign</artifactId>
         <groupId>com.leon</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>leon-cloud-gateways</artifactId>
-    <packaging>pom</packaging>
-    <description>网关 gateway 相关</description>
-    <modules>
-        <module>leon-cloud-gateways-zuul-simple</module>
-        <module>leon-cloud-gateways-zuul</module>
-        <module>leon-cloud-gateways-gateway-simple</module>
-        <module>leon-cloud-gateways-gateway-dynamic</module>
-    </modules>
+    <artifactId>leon-cloud-feign-api</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

@@ -4,7 +4,7 @@ spring:
   application:
     name: leon-gateways-gateway
   profiles:
-    active: weight_route # 当前激活的配置文件
+    active: path_switch_route # 当前激活的配置文件
 eureka:
   client:
     service-url:
@@ -127,3 +127,18 @@ spring:
           filters:
             - MapRequestHeader=Blue, X-Request-Red
   profiles: map_request_header_route
+# 测试匹配根据匹配条件调用不同服务，静态
+---
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: by-ribbon
+          uri: lb://leon-cloud-ribbon-server
+          predicates:
+            - Path=/user/1 # 匹配请求路径 RequestMapping 内容
+        - id: by-eureka
+          uri: lb://leon-register-eureka-client
+          predicates:
+            - Path=/hello # 匹配请求路径 RequestMapping 内容
+  profiles: path_switch_route
