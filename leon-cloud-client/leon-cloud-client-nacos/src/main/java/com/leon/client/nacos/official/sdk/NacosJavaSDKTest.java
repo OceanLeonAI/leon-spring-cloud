@@ -16,7 +16,8 @@ import java.util.Properties;
  **/
 public class NacosJavaSDKTest {
     private static String serverAddr = "localhost:8848";
-    private static String dataId = "leon-cloud-nacos-register";
+//    private static String dataId = "leon-cloud-nacos-register";
+    private static String dataId = "gateway-router";
     private static String group = "DEFAULT_GROUP";
 
     public static void main(String[] args) {

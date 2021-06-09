@@ -31,6 +31,7 @@ public class TestController {
      */
     @GetMapping("/user")
     public User getUser() {
+        System.err.println("来自 com.leon.register.nacos.controller.TestController.getUser()...");
         return new User(1L, "nacos", "test", "test@qq.com", "演示Nacos 替换Eureka");
     }
 }

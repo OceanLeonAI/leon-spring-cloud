@@ -4,6 +4,16 @@ spring:
   cloud:
     nacos:
       discovery:
+        # 服务发现地址
         server-addr: localhost:8848
+        # nacos 命名空间，必须填 id
+        namespace: c6cdd823-110c-4fec-b155-27cc25e5348a
+        # 空间所在分组，默认为 DEFAULT_GROUP
+#        group: leon
 server:
   port: 8861
+
+# 同命名空间 + 同组 -> 可访问
+# 同命名空间 + 不同组 -> 不可访问
+# 不同命名空间 + 同组 -> 不可访问
+# 不同命名空间 + 不同组 -> 不可访问

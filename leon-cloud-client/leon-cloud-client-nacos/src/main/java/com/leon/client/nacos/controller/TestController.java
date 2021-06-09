@@ -36,6 +36,7 @@ public class TestController {
      */
     @GetMapping("/user")
     public User user() {
+        System.err.println("来自 com.leon.client.nacos.controller.TestController.user()...");
         return nacosApi.getUser();
     }
 }
