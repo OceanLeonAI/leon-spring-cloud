@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: leon-register-nacos-configuration #微服务id,可以从 nacos 注册中心读取
+  profiles:
+    active: dev # 环境名决定启用哪个配置文件: dev 开发环境，test 测试环境，prod 生成环境
+  cloud:
+    nacos:
+      config: #Nacos配置中心配置
+        file-extension: yaml #文件扩展名
+        server-addr: localhost:8848 # nacos 注册中心地址
+        username: nacos
+        password: nacos
+        namespace: c2ccfa97-72e6-48c8-83c8-387caae7c394 # 命名空间 leon-register-nacos-configuration
+#      discovery:
+#        server-addr: localhost:8848 # nacos 注册中心地址
+#        namespace: c2ccfa97-72e6-48c8-83c8-387caae7c394 # 命名空间 leon-register-nacos-configuration
+#        username: nacos
+#        password: nacos
+logging: #开启debug日志，仅为学习时使用
+  level:
+    root: debug

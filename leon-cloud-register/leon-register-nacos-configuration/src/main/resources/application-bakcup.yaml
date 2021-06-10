@@ -1,0 +1,17 @@
+# 这个文件用于本地配置，如果要从 nacos 配置中心读取配置文件，将此文件删除，并新增 bootstrap 配置文件
+server:
+  port: 8000
+spring:
+  application:
+    name: leon-register-nacos-configuration
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848 #Nacos通信地址
+        username: nacos
+        password: nacos
+        namespace: dd8d2659-3659-442b-8dfe-773d13808389 # leon
+custom: #自定义配置项
+  flag: development
+  database: 192.168.10.31
+  message: 本地文件

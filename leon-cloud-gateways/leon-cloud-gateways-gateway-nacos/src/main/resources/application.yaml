@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: leon-cloud-gateway-nacos
+  cloud:
+    nacos:
+      discovery:
+        # 服务发现地址
+        server-addr: localhost:8848
+        # nacos 命名空间，必须填 id
+        namespace: c2ccfa97-72e6-48c8-83c8-387caae7c394 # leon-register-nacos-configuration
+        # 空间所在分组，默认为 DEFAULT_GROUP
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+#        group: leon
+server:
+  port: 8888
+
+# 同命名空间 + 同组 -> 可访问
+# 同命名空间 + 不同组 -> 不可访问
+# 不同命名空间 + 同组 -> 不可访问
+# 不同命名空间 + 不同组 -> 不可访问

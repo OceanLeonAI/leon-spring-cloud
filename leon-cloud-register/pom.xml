@@ -15,6 +15,7 @@
     <modules>
         <module>leon-register-eureka</module>
         <module>leon-register-nacos</module>
+        <module>leon-register-nacos-configuration</module>
     </modules>
 
     <properties>

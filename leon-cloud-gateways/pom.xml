@@ -17,6 +17,7 @@
         <module>leon-cloud-gateways-zuul</module>
         <module>leon-cloud-gateways-gateway-simple</module>
         <module>leon-cloud-gateways-gateway-dynamic</module>
+        <module>leon-cloud-gateways-gateway-nacos</module>
     </modules>
 
     <properties>
